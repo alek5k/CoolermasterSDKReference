@@ -1,0 +1,247 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文 (台灣) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#include ""res\\SDKExample.rc2""  // 非 Microsoft Visual C++ 編輯過的資源\r\n"
+    "#include ""l.CHT\\afxres.rc""      // 標準元件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SDKExample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 SDKExample"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "SDKExample, 1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "確定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SDKEXAMPLE_DIALOG DIALOGEX 0, 0, 307, 360
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SDKExample"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,239,339,50,14
+    LTEXT           "CPU Usage:",IDC_STATIC,20,45,37,8
+    EDITTEXT        IDC_EDIT_CPU_USAGE,58,43,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ram Usage:",IDC_STATIC,136,45,38,8
+    EDITTEXT        IDC_EDIT_RAM_USGAE,175,43,27,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Volume Peek:",IDC_STATIC,210,45,44,8
+    EDITTEXT        IDC_EDIT_VOLUME_PEEK,257,43,29,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "System Time:",IDC_STATIC,22,24,44,8
+    EDITTEXT        IDC_EDIT_SYS_TIME,67,22,79,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_ROW,45,178,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Row:",IDC_STATIC,25,180,17,8
+    COMBOBOX        IDC_COMBO_COLUMN,139,177,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Column:",IDC_STATIC,105,179,26,8
+    PUSHBUTTON      "Set Single Key",IDC_BUTTON_SINGLE_KEY,37,221,50,14
+    PUSHBUTTON      "Set ALL Key",IDC_BUTTON_ALL_KEY,106,220,50,14
+    GROUPBOX        "System Infomation",IDC_STATIC,14,7,279,60
+    EDITTEXT        IDC_EDIT_R,39,200,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "R:",IDC_STATIC,26,203,8,8
+    EDITTEXT        IDC_EDIT_G,106,198,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "G:",IDC_STATIC,93,201,8,8
+    EDITTEXT        IDC_EDIT_B,172,198,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "B:",IDC_STATIC,159,201,8,8
+    GROUPBOX        " Set LED color for every key",IDC_STATIC,16,162,277,81
+    PUSHBUTTON      "Enable",IDC_BUTTON_LED_CONTROL,66,135,50,14
+    LTEXT           "LED Control",IDC_STATIC,17,138,39,8
+    LTEXT           "LED Effect Choose:",IDC_STATIC,131,138,70,8
+    COMBOBOX        IDC_COMBO_EFFECT,196,136,62,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set",IDC_BUTTON_EFFECT_SET,261,134,20,14
+    PUSHBUTTON      "Set color",IDC_BUTTON_SET_ONE_COLOR,37,285,50,14
+    EDITTEXT        IDC_EDIT_R2,39,265,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "R:",IDC_STATIC,26,268,8,8
+    EDITTEXT        IDC_EDIT_G2,106,263,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "G:",IDC_STATIC,93,266,8,8
+    EDITTEXT        IDC_EDIT_B2,172,263,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "B:",IDC_STATIC,159,266,8,8
+    GROUPBOX        " Set All LED ",IDC_STATIC,16,250,277,54
+    LTEXT           "Select Device:",IDC_STATIC,17,87,52,8
+    COMBOBOX        IDC_COMBO_DEVICE,66,85,102,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set",IDC_BUTTON_DEVICE_SET,174,83,20,14
+    EDITTEXT        IDC_EDIT_LAYOUT,227,83,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Layout:",IDC_STATIC,200,86,26,8
+    PUSHBUTTON      "Get",IDC_BUTTON_GET_LAYOUT,270,83,20,14
+    CONTROL         "Key Effect",IDC_CHECK_KEY_EFF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,313,50,10
+    LTEXT           "PS: If Key Effect Function is enable, the KEY_DOWN will be ignored.",IDC_STATIC,35,325,224,8
+    PUSHBUTTON      "Status",IDC_BUTTON_CPU_STATUS,90,43,27,14
+    PUSHBUTTON      "Check",IDC_BUTTON_CEHCK_DEV,66,108,50,14
+    LTEXT           "IsDevicePlug",IDC_STATIC,18,111,39,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040403b6"
+        BEGIN
+            VALUE "CompanyName", "Cooler Master"
+            VALUE "FileDescription", "SDKExample"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SDKExample.exe"
+            VALUE "LegalCopyright", "Cooler Master.  All rights reserved."
+            VALUE "OriginalFilename", "SDKExample.exe"
+            VALUE "ProductName", "SDKExample"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 950
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SDKEXAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 353
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "關於 SDKExample(&A)..."
+END
+
+#endif    // 中文 (台灣) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#pragma code_page(950)
+#include "res\SDKExample.rc2"  // 非 Microsoft Visual C++ 編輯過的資源
+#include "l.CHT\afxres.rc"      // 標準元件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
