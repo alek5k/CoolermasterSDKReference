@@ -5,10 +5,11 @@
 #pragma once
 
 #ifndef __AFXWIN_H__
-	#error " 'stdafx.h'"
+	#error " PCH  'stdafx.h'"
 #endif
 
 #include "resource.h"
+#include <stdbool.h>
 
 // CSDKExampleApp:
 
