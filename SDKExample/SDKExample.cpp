@@ -30,7 +30,8 @@ BOOL CSDKExampleApp::InitInstance()
 	CWinAppEx::InitInstance();
 
 	AfxEnableControlContainer();
-	SetRegistryKey(_T("本機 AppWizard 所產生的應用程式"));
+	SetRegistryKey(_T(" AppWizard "));
+
 
 	CSDKExampleDlg dlg;
 	m_pMainWnd = &dlg;
